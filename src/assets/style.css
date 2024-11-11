@@ -1,0 +1,190 @@
+
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/* Card Styling */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card .container {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.card .container h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.card .container div {
+  display: flex;
+  align-items: center;
+}
+
+.card .container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+.card .container button:hover {
+  background-color: #0056b3;
+}
+
+.card .container h4 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+/* Shipping and Coupon Section */
+div > label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+select {
+  font-size: 1rem;
+  padding: 8px;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Coupon Input */
+input[type="text"] {
+  padding: 8px;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+
+/* Total Price Section */
+div h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+div h1{
+    margin-bottom: 20px;
+}
+input[readonly] {
+  padding: 12px;
+  font-size: 1.2rem;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 10px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100px;
+  }
+
+  .card .container {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .card .container div {
+    flex-direction: column;
+  }
+
+  select {
+    width: auto;
+  }
+
+  /* button {
+    width: 100%;
+  } */
+}
+
+
